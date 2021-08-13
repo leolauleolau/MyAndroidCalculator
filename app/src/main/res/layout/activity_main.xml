@@ -41,7 +41,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/Result"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="-8342.5" />
+        tools:text="0" />
 
     <Button
         android:id="@+id/button0"
