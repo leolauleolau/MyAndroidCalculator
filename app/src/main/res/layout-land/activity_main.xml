@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/buttonAc"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:text="AC"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ConstraingLayout"
+        app:layout_constraintStart_toEndOf="@+id/ConstraingLayout" />
+
     <EditText
         android:id="@+id/result"
         android:layout_width="wrap_content"
@@ -177,9 +186,9 @@
 
     <Button
         android:id="@+id/buttonNeg"
-        android:layout_width="42dp"
+        android:layout_width="wrap_content"
         android:layout_height="39dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:text="NEG"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonDiv"
         app:layout_constraintStart_toEndOf="@+id/buttonDiv" />

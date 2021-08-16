@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonMultiply = findViewById(R.id.ConstraingLayout);
         Button buttonMinus = findViewById(R.id.buttonMinus);
         Button buttonPlus = findViewById(R.id.buttonplus);
+
         View.OnClickListener listner = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -105,8 +106,19 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        Button buttonAc = findViewById(R.id.buttonAc);
+        buttonAc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                newNumber.setText("");
+                operand1 = null;
+                result.setText("0.0");
+            }
+        });
     }
 
+    // save var before it destroy our view
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putString(STATE_PENDING_OPERATION,OPERATION_STATE);
